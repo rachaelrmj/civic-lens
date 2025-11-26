@@ -1,10 +1,57 @@
-/* CSS by ///ADD/// YOUR NAME */
+/* CSS by Rachael Martinez-Jones */
 
 /* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* ///ADD/// CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 /* Root Variables */
 :root {
@@ -39,13 +86,103 @@ body.dark-mode {
 }
 
 /* ///ADD/// Skip Link Styles */
+.skip-link a {
+    position: absolute;
+    left: -1000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 
+.skip-link a:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
 /* ///ADD/// Navigation Styles */
 
 /* ///ADD/// Global Layout Styles */
-
+* {
+    box-sizing: border-box;
+    line-height: 1.15;
+}
 /* ///ADD/// Global Text Styles */
+header {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 20px;
+  margin-bottom: 35px;
+}
 
+body {
+  background-color: var(--watchdog-white);
+}
+
+main {
+  margin: 0 20px;
+}
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+blockquote {
+  font-weight: bold;
+  text-align: center;
+}
+
+#breaking-news-container div {
+  padding: 10px 15px;
+  margin: 10px;
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  box-shadow: var(--shadow);
+}
+
+#breaking-news-container h3 {
+  border-bottom: 2px solid var(--watchdog-white);
+}
+
+#breaking-news-container p {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#featured-articles-container div {
+  box-shadow: var(--shadow);
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.breaking-news-container {
+  padding: 10px;
+}
+
+form {
+  background-color: var(--news-flash);
+  color: #ffffff;
+  padding: 10px;
+  box-shadow: var(--shadow);
+}
+
+footer {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 10px
+}
 
 /* ///ADD/// medium styles 620px */
 
