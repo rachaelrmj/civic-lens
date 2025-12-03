@@ -102,6 +102,7 @@ body.dark-mode {
 }
 /* ///ADD/// Navigation Styles */
 
+
 /* ///ADD/// Global Layout Styles */
 * {
     box-sizing: border-box;
@@ -215,6 +216,7 @@ form {
 legend {
   margin-left: 10px;
   text-transform: uppercase;
+  font-size: 20px;
 }
 
 #name, #phone {
@@ -241,8 +243,13 @@ fieldset legend {
 }
 
 fieldset input[type="checkbox"] {
-  margin-left: 5px;
-  margin-bottom: 15px;
+  margin: 15px 0px;
+  width: 60px;
+  height: 25px;
+}
+
+fieldset label {
+  font-size: 25px;
 }
 
 #subscribe {
@@ -283,10 +290,36 @@ footer button {
 small {
   font-size: 14px;
   text-align: center;
+  padding: 20px 0px;
 }
 
 /* ///ADD/// medium styles 620px */
 @media (min-width: 620px) {
+  .tagline {
+    padding-bottom: 20px;
+  }
+
+  nav label {
+    display: none;
+  }
+
+  nav li {
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    text-decoration: none;
+    background-color: var(--news-flash);
+    color: var(--watchdog-white);
+    padding: 10px;
+    text-transform: uppercase;
+  }
+
+  #main-content h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
 
   #breaking-news-container {
     display: grid;
@@ -298,10 +331,32 @@ small {
     padding-bottom: 20px;
   }
 
+  #featured-articles h3 {
+    font-size: 20px;
+  }
+
+  #featured-articles p {
+    font-size: 17px;
+  }
+
   #featured-articles-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+
+#stay-informed-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  #stay-informed form {
+    flex: 1;
+  }
+
+  #stay-informed div {
+    flex: 1;
   }
 
 
