@@ -128,12 +128,7 @@ h1 {
   font-size: 60px;
 }
 
-h2 {
-  font-size: 25px;
-  
-}
-
-h3 {
+#breaking-news h3 {
   font-size: 19px;
   font-family: var(--font-heading);
   color: var(--watchdog-white);
@@ -144,6 +139,10 @@ blockquote {
   font-weight: bold;
   text-align: center;
   padding-bottom: 25px;
+}
+
+#breaking-news {
+  padding-bottom: 20px;
 }
 
 #breaking-news-container div {
@@ -175,14 +174,35 @@ blockquote {
   margin-bottom: 5px;
 }
 
+#featured-articles h3 {
+  font-size: 25px;
+  font-family: var(--font-heading);
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--story-subtitle);
+  line-height: 1.5;
+}
+
+#featured-articles p {
+  padding-top: 10px;
+  font-family: var(--font-body);
+  font-size: 20px;
+}
+
 video {
   width: 100%;
   height: auto;
   
 }
 
-.breaking-news-container {
-  padding: 10px;
+#stay-informed  h2{
+  margin-top: 30px;
+  padding-bottom: 10px;
+  font-size: 35px;
+}
+
+#stay-informed p {
+  padding-bottom: 15px;
+  font-size: 20px;
 }
 
 form {
@@ -192,14 +212,102 @@ form {
   box-shadow: var(--shadow);
 }
 
+legend {
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+#name, #phone {
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+}
+
+#name {
+  margin-bottom: 25px;
+}
+
+#phone {
+  margin-bottom: 15px;
+}
+
+fieldset {
+  border: solid 2px var(--blue-bulletin);
+  margin: 5px;
+}
+
+fieldset legend {
+  margin-bottom: 10px;
+}
+
+fieldset input[type="checkbox"] {
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+#subscribe {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
 footer {
   background-color: var(--blue-bulletin);
   color: var(--watchdog-white);
-  padding: 10px
+  padding: 10px;
+}
+
+footer h2 {
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+footer button {
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  border: none;
+  padding: 20px 15px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+ 
+small {
+  font-size: 14px;
+  text-align: center;
 }
 
 /* ///ADD/// medium styles 620px */
+@media (min-width: 620px) {
 
+  #breaking-news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  #featured-articles h2 {
+    padding-bottom: 20px;
+  }
+
+  #featured-articles-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+
+
+
+}
 
 /* ///ADD/// large styles 920px */
 

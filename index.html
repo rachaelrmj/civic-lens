@@ -121,42 +121,56 @@
           <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
           <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
         </div>
+        
     <section id="stay-informed">    
       <h2>Stay Informed. Stay Empowered.</h2>
         <p>Receive text messages with the news you want to know.</p>
         
         <form method="post" action="https://wp.zybooks.com/form-viewer.php">
-          <label for="fullName">Name</label>
-				  <input type="text" id="Name" name="Name" autocomplete="name" required>
+          <label for="name">Name</label>
+				  <input type="text" id="name" name="name" autocomplete="name" required>
         
           <label for="phone">Mobile</label>
 				  <input type="tel" id="phone" name="phone" autocomplete="tel" required>
 
           <fieldset>
 					  <legend>Notification Preferences</legend>
+
+            <input type="checkbox" id="bnews" name="bnews" value="Breaking News">
+            <label for="bnews">Breaking News</label><br>
         
+            <input type="checkbox" id="politics" name="politics" value="Politics">
+            <label for="politics">Politics</label><br>
         
-        Breaking News
-        Politics
-        Weather
-        Sports
-        Entertainment
-        World
-        Financial
-        
-        Subscribe
+            <input type="checkbox" id="weather" name="weather" value="Weather">
+            <label for="weather">Weather</label><br>
+
+            <input type="checkbox" id="sports" name="sports" value="Sports">
+            <label for="sports">Sports</label><br>
+
+            <input type="checkbox" id="entertainment" name="entertainment" value="Entertainment">
+            <label for="entertainment">Entertainment</label><br> 
+
+            <input type="checkbox" id="world" name="world" value="World">
+            <label for="world">World</label><br>
+
+            <input type="checkbox" id="financial" name="financial" value="Financial">
+            <label for="financial">Financial</label><br>
+          </fieldset>
+
+          <input type="submit" id="subscribe" value="Subscribe">
         </form>
     </section>
 
     <footer>
       <h2>Follow Us</h2>
-        <button>Twitter/X</button>
-        <button>Instagram</button>
-        <button>YouTube</button>
-        <button>TikTok</button>
-        <button>LinkedIn</button>
+        <button id="twitter">Twitter/X</button>
+        <button id="instagram">Instagram</button>
+        <button id="youtube">YouTube</button>
+        <button id="tiktok">TikTok</button>
+        <button id="linkedIn">LinkedIn</button>
         
-        <small>&copy; 2025 Civic Lens. All rights reserved.</small>
+        <small><p>&copy; 2025 Civic Lens. All rights reserved.</p></small>
     </footer>      
         
   <script>
