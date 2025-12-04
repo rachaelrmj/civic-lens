@@ -131,9 +131,18 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
+  position: relative;
+  left: -10px;
+  font-size: 24px;
   font-family: var(--font-heading);
-  padding-bottom: 5px;
+}
+
+main h2:first-of-type {
+  margin-bottom: 5px;
+}
+
+main p:first-of-type {
+  margin-bottom: 20px;
 }
 
 #breaking-news h3 {
@@ -176,14 +185,19 @@ blockquote {
   font-size: 15px;
 }
 
+#featured-articles h2 {
+  margin-bottom: 8px;
+}
+
 #featured-articles-container div {
   box-shadow: var(--shadow);
-  padding: 10px;
-  margin-bottom: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid var(--story-subtitle);
 }
 
 #featured-articles h3 {
-  font-size: 25px;
+  font-size: 21px;
   font-family: var(--font-heading);
   padding-bottom: 2px;
   border-bottom: 2px solid var(--story-subtitle);
@@ -191,9 +205,8 @@ blockquote {
 }
 
 #featured-articles p {
-  padding-top: 10px;
   font-family: var(--font-body);
-  font-size: 20px;
+  font-size: 16px;
 }
 
 video {
@@ -278,11 +291,11 @@ fieldset label {
 footer {
   background-color: var(--blue-bulletin);
   color: var(--watchdog-white);
-  padding: 10px;
+  padding-top: 40px;
+  padding-left: 20px;
 }
 
 footer h2 {
-  font-size: 35px;
   padding-bottom: 10px;
 }
 
@@ -291,7 +304,7 @@ footer button {
   color: var(--watchdog-white);
   border: none;
   padding: 20px 15px;
-  margin-right: 20px;
+  margin-right: 15px;
   margin-bottom: 20px;
   cursor: pointer;
   font-size: 16px;
