@@ -345,21 +345,13 @@ small {
     gap: 20px;
   }
 
-#stay-informed-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+  footer {
+    margin-top: 20px;
   }
 
-  #stay-informed form {
-    flex: 1;
+  footer p {
+    text-align: center;
   }
-
-  #stay-informed div {
-    flex: 1;
-  }
-
-
 
 
 }
