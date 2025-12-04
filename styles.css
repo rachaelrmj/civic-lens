@@ -114,7 +114,7 @@ body.dark-mode {
 header {
   background-color: var(--blue-bulletin);
   color: var(--watchdog-white);
-  padding: 20px;
+  padding: 20px 30px;
   margin-bottom: 35px;
 }
 
@@ -123,21 +123,30 @@ body {
   font-family: var(--font-body);
 }
 
+.tagline {
+  padding: 20px 0px;
+}
+
 main {
   margin: 0 30px;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 45px;
   font-family: var(--font-heading);
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 30px;
   font-family: var(--font-heading);
 }
 
-main h2, main p {
+main h2 {
+  position: relative;
+  left: -10px;
+}
+
+.description {
   position: relative;
   left: -10px;
 }
@@ -203,7 +212,6 @@ blockquote {
 
 #featured-articles h3 {
   font-size: 20px;
-  font-family: var(--font-heading);
   padding-bottom: 2px;
   border-bottom: 2px solid var(--story-subtitle);
   line-height: 1.5;
@@ -218,11 +226,6 @@ video {
   width: 100%;
   height: auto;
   
-}
-
-#stay-informed  h2{
-  margin-top: 30px;
-  padding-bottom: 10px;
 }
 
 #stay-informed p {
@@ -335,10 +338,6 @@ small {
 
 /* ///ADD/// medium styles 620px */
 @media (min-width: 620px) {
-  .tagline {
-    padding-bottom: 20px;
-  }
-
   nav label {
     display: none;
   }
@@ -352,12 +351,16 @@ small {
     text-decoration: none;
     background-color: var(--news-flash);
     color: var(--watchdog-white);
-    padding: 10px;
+    padding: 10px 8px;
+    margin-right: 10px;
     text-transform: uppercase;
   }
 
-  #main-content h2 {
-    font-size: 30px;
+  main {
+    margin: 0 40px;
+  }
+
+  main h2 {
     padding-bottom: 10px;
   }
 
@@ -368,21 +371,18 @@ small {
   }
 
   #featured-articles h2 {
-    padding-bottom: 20px;
-  }
-
-  #featured-articles h3 {
-    font-size: 20px;
-  }
-
-  #featured-articles p {
-    font-size: 17px;
+    padding-bottom: 10px;
   }
 
   #featured-articles-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+
+  #stay-informed h2 {
+    margin-top: 30px;
   }
 
   .name-mobile-group {
@@ -407,6 +407,9 @@ small {
     text-align: center;
   }
 
+  footer button {
+    padding: 18px 10px;
+  }
 
 }
 
