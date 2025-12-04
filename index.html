@@ -129,41 +129,63 @@
         <p>Receive text messages with the news you want to know.</p>
         
         <form method="post" action="https://wp.zybooks.com/form-viewer.php">
-          <label for="name">Name</label>
-				  <input type="text" id="name" name="name" autocomplete="name" required>
-        
-          <label for="phone">Mobile</label>
-				  <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+          <div class="name-mobile-group">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+
+            <div>
+              <label for="phone">Mobile</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+            </div>
+          </div>
 
           <fieldset>
 					  <legend>Notification Preferences</legend>
 
-            <input type="checkbox" id="bnews" name="bnews" value="Breaking News">
-            <label for="bnews">Breaking News</label><br>
-        
-            <input type="checkbox" id="politics" name="politics" value="Politics">
-            <label for="politics">Politics</label><br>
-        
-            <input type="checkbox" id="weather" name="weather" value="Weather">
-            <label for="weather">Weather</label><br>
+            <div class="checkbox-group">
+              <div>
+                <input type="checkbox" id="bnews" name="bnews" value="Breaking News">
+                <label for="bnews">Breaking News</label><br>
+              </div>
 
-            <input type="checkbox" id="sports" name="sports" value="Sports">
-            <label for="sports">Sports</label><br>
+              <div>
+                <input type="checkbox" id="politics" name="politics" value="Politics">
+                <label for="politics">Politics</label><br>
+              </div>
 
-            <input type="checkbox" id="entertainment" name="entertainment" value="Entertainment">
-            <label for="entertainment">Entertainment</label><br> 
+              <div>
+                <input type="checkbox" id="weather" name="weather" value="Weather">
+                <label for="weather">Weather</label><br>
+              </div>
 
-            <input type="checkbox" id="world" name="world" value="World">
-            <label for="world">World</label><br>
+              <div>
+                <input type="checkbox" id="sports" name="sports" value="Sports">
+                <label for="sports">Sports</label><br>
+              </div>
 
-            <input type="checkbox" id="financial" name="financial" value="Financial">
-            <label for="financial">Financial</label><br>
+              <div>
+                <input type="checkbox" id="entertainment" name="entertainment" value="Entertainment">
+                <label for="entertainment">Entertainment</label><br> 
+              </div>
+
+              <div>
+                <input type="checkbox" id="world" name="world" value="World">
+                <label for="world">World</label><br>
+              </div>
+
+              <div>
+                <input type="checkbox" id="financial" name="financial" value="Financial">
+                <label for="financial">Financial</label><br>
+              </div>
+            </div>
           </fieldset>
 
           <input type="submit" id="subscribe" value="Subscribe">
         </form>
     </section>
-
+  </main>
     <footer>
       <h2>Follow Us</h2>
         <button id="twitter">Twitter/X</button>

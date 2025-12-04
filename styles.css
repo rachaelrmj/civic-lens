@@ -125,8 +125,15 @@ body {
 main {
   margin: 0 25px;
 }
+
 h1 {
   font-size: 60px;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: var(--font-heading);
+  padding-bottom: 5px;
 }
 
 #breaking-news h3 {
@@ -198,18 +205,19 @@ video {
 #stay-informed  h2{
   margin-top: 30px;
   padding-bottom: 10px;
-  font-size: 35px;
 }
 
 #stay-informed p {
   padding-bottom: 15px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 form {
   background-color: var(--news-flash);
   color: #ffffff;
   padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--truth-text);
   box-shadow: var(--shadow);
 }
 
@@ -219,18 +227,21 @@ legend {
   font-size: 20px;
 }
 
+.name-mobile-group {
+  margin-bottom: 15px;
+}
+
+.name-mobile-group div:first-of-type {
+  margin-bottom: 15px;
+}
+
+.name-mobile-group div:last-of-type {
+  margin-bottom: 15px;
+}
+
 #name, #phone {
   width: 100%;
   height: 50px;
-  margin-top: 5px;
-}
-
-#name {
-  margin-bottom: 25px;
-}
-
-#phone {
-  margin-bottom: 15px;
 }
 
 fieldset {
@@ -243,7 +254,7 @@ fieldset legend {
 }
 
 fieldset input[type="checkbox"] {
-  margin: 15px 0px;
+  margin: 10px 0px;
   width: 60px;
   height: 25px;
 }
@@ -288,7 +299,8 @@ footer button {
 }
  
 small {
-  font-size: 14px;
+  display: block;
+  font-size: 20px;
   text-align: center;
   padding: 20px 0px;
 }
@@ -345,6 +357,20 @@ small {
     gap: 20px;
   }
 
+  .name-mobile-group {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 5px;
+  }
+
+  .checkbox-group {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+
+  }
+
   footer {
     margin-top: 20px;
   }
@@ -357,7 +383,21 @@ small {
 }
 
 /* ///ADD/// large styles 920px */
+@media (min-width: 920px) {
 
+    #featured-articles-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+    .checkbox-group {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+
+  }
+}
 
 /* ///ADD/// x-large styles 1024px */
 
