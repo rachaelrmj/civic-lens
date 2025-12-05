@@ -237,6 +237,11 @@ blockquote {
   border: 1px solid var(--truth-text);
 }
 
+#breaking-news-container div:hover, #featured-articles-container div:hover {
+  transform: scale(1.05);
+  transition: var(--transition);
+}
+
 #breaking-news-container h3 {
   border-bottom: 2px solid var(--watchdog-white);
 }
