@@ -337,6 +337,7 @@ small {
 }
 
 /* ///ADD/// medium styles 620px */
+
 @media (min-width: 620px) {
   nav label {
     display: none;
@@ -356,6 +357,12 @@ small {
     text-transform: uppercase;
   }
 
+  nav a:hover {
+    background-color: var(--blue-bulletin);
+    border: 1px solid var(--news-flash);
+    transition: background-color 0.8s ease-in-out;
+  }
+
   main {
     margin: 0 40px;
   }
@@ -368,6 +375,13 @@ small {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+
+  #breaking-news-container div {
+    cursor: pointer;
+    width:110%;
+    height:
+    transform: width 0.3s ease, height 0.3s ease;
   }
 
   #featured-articles h2 {
@@ -419,14 +433,18 @@ small {
     #featured-articles-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 10px;
   }
 
     .checkbox-group {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
+  }
 
+  footer button {
+    padding: 10px;
   }
 }
 
