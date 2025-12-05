@@ -23,7 +23,7 @@
 <!-- ADD semantic and validated HTML -->
 <!-- ADD skip to main content -->
  <header>
-    <a class="skip-link" href="#main">Skip to main content</a>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <button id="theme-toggle" aria-label="Toggle light/dark mode">
       <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
@@ -39,9 +39,9 @@
       <label for="menu-toggle" class="menu-button">Menu</label>
       <ul class="menu">
         <li><a href="#breaking-news">Breaking News</a></li>
-        <li><a href="#featured-aticles">Featured Articles</a></li>
-        <li><a href="#alerts">Alerts</a></li>
-        <li><a href="#social">Social</a></li>
+        <li><a href="#featured-articles">Featured Articles</a></li>
+        <li><a href="#stay-informed">Alerts</a></li>
+        <li><a href="#social-media">Social</a></li>
       </ul>
     </nav>
   </header>
@@ -53,21 +53,25 @@
     
     <section id="breaking-news">
       <h2>Breaking News</h2>
-        <div id="breaking-news-container">
+      <div id="breaking-news-container">
           <div>
             <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
             <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
             <video controls>
               <source src="videos/water-management.mp4" type="video/mp4">
+              Your browser does not support this video
             </video>
           </div>
+
           <div>
             <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
             <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
             <video controls preload="auto">
               <source src="videos/voter-suppression.mp4" type="video/mp4">
+              Your browser does not support this video
             </video>
         </div>
+      </div>
     </section>
     
     <section id="featured-articles">
@@ -147,37 +151,37 @@
             <div class="checkbox-group">
               <div>
                 <input type="checkbox" id="bnews" name="bnews" value="Breaking News">
-                <label for="bnews">Breaking News</label><br>
+                <label for="bnews">Breaking News</label>
               </div>
 
               <div>
                 <input type="checkbox" id="politics" name="politics" value="Politics">
-                <label for="politics">Politics</label><br>
+                <label for="politics">Politics</label>
               </div>
 
               <div>
                 <input type="checkbox" id="weather" name="weather" value="Weather">
-                <label for="weather">Weather</label><br>
+                <label for="weather">Weather</label>
               </div>
 
               <div>
                 <input type="checkbox" id="sports" name="sports" value="Sports">
-                <label for="sports">Sports</label><br>
+                <label for="sports">Sports</label>
               </div>
 
               <div>
                 <input type="checkbox" id="entertainment" name="entertainment" value="Entertainment">
-                <label for="entertainment">Entertainment</label><br> 
+                <label for="entertainment">Entertainment</label>
               </div>
 
               <div>
                 <input type="checkbox" id="world" name="world" value="World">
-                <label for="world">World</label><br>
+                <label for="world">World</label>
               </div>
 
               <div>
                 <input type="checkbox" id="financial" name="financial" value="Financial">
-                <label for="financial">Financial</label><br>
+                <label for="financial">Financial</label>
               </div>
             </div>
           </fieldset>
@@ -187,15 +191,15 @@
     </section>
   </main>
 
-  <footer>
+  <footer id="social-media">
     <h2>Follow Us</h2>
-      <button id="twitter">Twitter/X</button>
-      <button id="instagram">Instagram</button>
-      <button id="youtube">YouTube</button>
-      <button id="tiktok">TikTok</button>
-      <button id="linkedIn">LinkedIn</button>
+      <a class="social" href="https://x.com/" target="_blank">Twitter/X</a>
+      <a class="social" href="https://www.instagram.com/" target="_blank">Instagram</a>
+      <a class="social" href="https://www.youtube.com/" target="_blank">YouTube</a>
+      <a class="social" href="https://www.tiktok.com/en/" target="_blank">TikTok</a>
+      <a class="social" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
         
-      <small><p>&copy; 2025 Civic Lens. All rights reserved. </small>
+      <p><small>&copy; 2025 Civic Lens. All rights reserved.</small></p>
   </footer>      
         
   <script>
